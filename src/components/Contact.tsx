@@ -275,7 +275,7 @@ description: "Available for remote work"
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Time Zone:</span>
-                      <span className="font-medium">IST (UTC+5:30)</span>
+                      <span className="font-medium">IST </span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Preferred Contact:</span>
