@@ -67,12 +67,13 @@ ${formData.message}`;
       description: "Direct call anytime"
     },
     {
-      icon: MapPin,
-      label: "Location",
-      value: "Vijayawada, India",
-      href: "#",
-      color: "from-purple-500 to-pink-500",
-      description: "Available for remote work"
+     icon: MapPin,
+label: "Location",
+value: "Vijayawada, India",
+href: "https://www.google.com/maps/place/Vijayawada,+Andhra+Pradesh,+India",
+color: "from-purple-500 to-pink-500",
+description: "Available for remote work"
+
     }
   ];
 
@@ -80,7 +81,7 @@ ${formData.message}`;
     {
       name: "LinkedIn",
       icon: Linkedin,
-      href: "https://linkedin.com/in/shannuthota",
+      href: "https://www.linkedin.com/in/shanmukha-sai-54127a28b/",
       color: "from-blue-600 to-blue-500"
     },
     {
