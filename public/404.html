@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Shanmukha Sai Thota</title>
+    <script>
+      // GitHub Pages SPA redirect hack
+      // This script takes the current url and converts it into a query string
+      // that the main index.html page can parse and use for client-side routing
+      (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+      
+      // If no redirect, go to home
+      if (!sessionStorage.redirect) {
+        window.location.href = '/Portfolio/';
+      }
+    </script>
+  </head>
+  <body>
+    <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+      <h1>Redirecting...</h1>
+      <p>If you are not redirected, <a href="/Portfolio/">click here</a>.</p>
+    </div>
+  </body>
+</html>
