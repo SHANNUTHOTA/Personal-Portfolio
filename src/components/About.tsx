@@ -39,7 +39,7 @@ export const About = () => {
                         <h4 className="font-bold text-base sm:text-lg">Bachelor of Technology</h4>
                         <p className="text-primary font-semibold text-sm sm:text-base">Information Technology</p>
                         <p className="text-muted-foreground text-xs sm:text-sm">DVR & DR. HS MIC College of Technology, Kanchikacherla</p>
-                        <p className="text-xs sm:text-sm text-muted-foreground">2022 - 2026 | CGPA: 7.14</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">2022 - 2026 | CGPA: 7.28</p>
                       </div>
                     </div>
                     
@@ -49,7 +49,7 @@ export const About = () => {
                         <h4 className="font-bold text-base sm:text-lg">Intermediate (12th)</h4>
                         <p className="text-primary font-semibold text-sm sm:text-base">Mathematics, Physics, Chemistry</p>
                         <p className="text-muted-foreground text-xs sm:text-sm">Sri Chaitanya Junior College</p>
-                        <p className="text-xs sm:text-sm text-muted-foreground">2020 - 2022 | Score: 972/1000</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">2020 - 2022 | Score: 672/1000</p>
                       </div>
                     </div>
 
@@ -59,7 +59,7 @@ export const About = () => {
                         <h4 className="font-bold text-base sm:text-lg">SSC</h4>
                         <p className="text-primary font-semibold text-sm sm:text-base">10th Grade</p>
                         <p className="text-muted-foreground text-xs sm:text-sm">Sri Chaitanya Techno School</p>
-                        <p className="text-xs sm:text-sm text-muted-foreground">2020 | Score: 998</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">2020 | Percentage: 99.8%</p>
                       </div>
                     </div>
                   </div>
