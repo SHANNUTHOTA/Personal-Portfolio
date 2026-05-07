@@ -136,7 +136,7 @@ export const Hero = () => {
   );
 
   return (
-    <section className="relative min-h-screen flex items-center bg-background overflow-hidden pt-14 sm:pt-16 md:pt-20">
+    <section className="relative flex items-center bg-background overflow-hidden pt-14 sm:pt-16 md:pt-20 pb-12 lg:min-h-screen">
       {/* Simple Background */}
       <div className="absolute inset-0">
         <img 
@@ -153,7 +153,7 @@ export const Hero = () => {
       
       {/* Content */}
       <div className="container relative z-10 px-3 sm:px-4 mx-auto">
-        <div className="flex flex-col lg:flex-row items-center justify-start lg:justify-between min-h-[calc(100vh-3.5rem)] sm:min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] gap-6 sm:gap-8 lg:gap-12 py-8 lg:py-0">
+        <div className="flex flex-col lg:flex-row items-center justify-start lg:justify-between lg:min-h-[calc(100vh-5rem)] gap-6 lg:gap-12 py-6 lg:py-0">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
 
