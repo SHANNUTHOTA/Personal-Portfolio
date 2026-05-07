@@ -111,10 +111,35 @@ export const About = () => {
                 </CardContent>
               </Card>
 
+              {/* Leadership & Contact — moved to left column for balance */}
+              <Card className="modern-card">
+                <CardContent className="p-4 sm:p-6 md:p-8">
+                  <div className="flex items-center gap-3 mb-4 sm:mb-6">
+                    <div className="p-2.5 rounded-xl bg-primary/10">
+                      <span className="text-2xl">👨‍💼</span>
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-bold gradient-text">Leadership &amp; Contact</h3>
+                  </div>
+                  <div className="space-y-2.5 mb-4">
+                    {["AAGAMA 2024 Event Organizer", "Hackathon Event Organizer", "Team Leadership in Multiple Projects"].map((item) => (
+                      <div key={item} className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-gradient-primary rounded-full flex-shrink-0"></div>
+                        <span className="text-sm">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="border-t border-border pt-4 space-y-2">
+                    <p className="text-muted-foreground text-sm"><strong>📧</strong> shannuthota2005@gmail.com</p>
+                    <p className="text-muted-foreground text-sm"><strong>📍</strong> Vijayawada, Andhra Pradesh</p>
+                    <p className="text-muted-foreground text-sm"><strong>📱</strong> +91 9492869571</p>
+                  </div>
+                </CardContent>
+              </Card>
+
             </div>
 
-            {/* RIGHT COLUMN: Experience + Hackathon + Leadership */}
-            <div className={`space-y-6 sm:space-y-8 transition-all duration-1000 delay-400 ${sectionVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'} flex flex-col`}>
+            {/* RIGHT COLUMN: Experience + Hackathon only */}
+            <div className={`space-y-6 transition-all duration-1000 delay-400 ${sectionVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'}`}>
 
               {/* Experience Card */}
               <Card className="modern-card">
@@ -182,44 +207,6 @@ export const About = () => {
                         Learned Move programming and cryptocurrency wallet integration.
                       </p>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card className="modern-card flex-1">
-                <CardContent className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
-                  <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                    <div className="p-2 sm:p-3 rounded-xl bg-gradient-primary/10">
-                      <span className="text-xl sm:text-2xl">👨‍💼</span>
-                    </div>
-                    <h3 className="text-xl sm:text-2xl font-bold gradient-text">Leadership & Contact</h3>
-                  </div>
-                  
-                  <div className="space-y-3 sm:space-y-4 mb-4 sm:mb-6 flex-grow">
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-gradient-primary rounded-full flex-shrink-0"></div>
-                      <span className="text-sm sm:text-base">AAGAMA 2024 Event Organizer</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-gradient-primary rounded-full flex-shrink-0"></div>
-                      <span className="text-sm sm:text-base">Hackathon Event Organizer</span>
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <div className="w-2 h-2 bg-gradient-primary rounded-full flex-shrink-0"></div>
-                      <span className="text-sm sm:text-base">Team Leadership in Multiple Projects</span>
-                    </div>
-                  </div>
-
-                  <div className="border-t border-border pt-4 sm:pt-6 space-y-2 sm:space-y-3">
-                    <p className="text-muted-foreground text-sm sm:text-base">
-                      <strong>📧 Email:</strong> shannuthota2005@gmail.com
-                    </p>
-                    <p className="text-muted-foreground text-sm sm:text-base">
-                      <strong>📍 Location:</strong> Vijayawada, Andhra Pradesh
-                    </p>
-                    <p className="text-muted-foreground text-sm sm:text-base">
-                      <strong>📱 Phone:</strong> +91 9492869571
-                    </p>
                   </div>
                 </CardContent>
               </Card>
