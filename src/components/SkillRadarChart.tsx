@@ -48,13 +48,13 @@ export const SkillRadarChart = () => {
 
   const getCategoryColor = (category: string) => {
     const colors = {
-      frontend: '#3b82f6',
-      backend: '#10b981',
-      database: '#f59e0b',
-      tools: '#8b5cf6',
-      other: '#ef4444',
+      frontend: '#f59e0b',
+      backend: '#fb923c',
+      database: '#fbbf24',
+      tools:    '#f97316',
+      other:    '#fcd34d',
     };
-    return colors[category as keyof typeof colors] || '#6b7280';
+    return colors[category as keyof typeof colors] || '#f59e0b';
   };
 
   const pathData = skills
@@ -110,9 +110,9 @@ export const SkillRadarChart = () => {
           <motion.path
             d={pathData}
             fill="url(#skillGradient)"
-            stroke="#8b5cf6"
+            stroke="#f59e0b"
             strokeWidth="2"
-            opacity="0.6"
+            opacity="0.7"
             initial={{ pathLength: 0 }}
             animate={isVisible ? { pathLength: 1 } : {}}
             transition={{ duration: 2, delay: 0.5 }}
@@ -141,8 +141,8 @@ export const SkillRadarChart = () => {
           {/* Gradient definition */}
           <defs>
             <radialGradient id="skillGradient" cx="50%" cy="50%" r="50%">
-              <stop offset="0%" stopColor="#8b5cf6" stopOpacity="0.4" />
-              <stop offset="100%" stopColor="#3b82f6" stopOpacity="0.1" />
+              <stop offset="0%" stopColor="#f59e0b" stopOpacity="0.45" />
+              <stop offset="100%" stopColor="#fb923c" stopOpacity="0.12" />
             </radialGradient>
           </defs>
         </svg>
