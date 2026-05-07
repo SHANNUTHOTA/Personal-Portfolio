@@ -78,6 +78,11 @@ export const About = () => {
                 </CardContent>
               </Card>
 
+            </div>
+
+            {/* RIGHT COLUMN: Experience + Hackathon + Leadership */}
+            <div className={`space-y-6 sm:space-y-8 transition-all duration-1000 delay-400 ${sectionVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'} flex flex-col`}>
+
               {/* Experience Card */}
               <Card className="modern-card">
                 <CardContent className="p-4 sm:p-6 md:p-8">
@@ -87,7 +92,6 @@ export const About = () => {
                     </div>
                     <h3 className="text-xl sm:text-2xl font-bold gradient-text">Experience</h3>
                   </div>
-
                   <div className="flex gap-4">
                     <div className="flex flex-col items-center">
                       <div className="w-3 h-3 rounded-full bg-primary mt-1 flex-shrink-0"></div>
@@ -112,45 +116,6 @@ export const About = () => {
                   </div>
                 </CardContent>
               </Card>
-
-              <Card className="modern-card flex-1">
-                <CardContent className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
-                  <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                    <div className="p-2 sm:p-3 rounded-xl bg-gradient-primary/10">
-                      <span className="text-xl sm:text-2xl">🎯</span>
-                    </div>
-                    <h3 className="text-xl sm:text-2xl font-bold gradient-text">Core Strengths</h3>
-                  </div>
-                  
-                  <div className="space-y-3 sm:space-y-4 flex-grow">
-                    {[
-                      { skill: "Full-Stack Development", level: 90 },
-                      { skill: "IoT & Hardware", level: 85 },
-                      { skill: "Blockchain Development", level: 70 },
-                      { skill: "Problem Solving", level: 95 }
-                    ].map((item, index) => (
-                      <div key={index} className="space-y-1.5 sm:space-y-2">
-                        <div className="flex justify-between items-center">
-                          <span className="font-medium text-sm sm:text-base">{item.skill}</span>
-                          <span className="text-xs sm:text-sm text-primary font-semibold">{item.level}%</span>
-                        </div>
-                        <div className="h-1.5 sm:h-2 bg-muted rounded-full overflow-hidden">
-                          <div 
-                            className="h-full bg-gradient-primary transition-all duration-1000 ease-out"
-                            style={{
-                              width: sectionVisible ? `${item.level}%` : '0%',
-                              transitionDelay: `${index * 0.1}s`
-                            }}
-                          ></div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            <div className={`space-y-6 sm:space-y-8 transition-all duration-1000 delay-400 ${sectionVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'} flex flex-col h-full`}>
               <Card className="modern-card flex-1">
                 <CardContent className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
                   <div className="flex items-center gap-3 mb-4 sm:mb-6">

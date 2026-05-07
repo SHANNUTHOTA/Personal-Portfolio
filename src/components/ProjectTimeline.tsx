@@ -52,7 +52,7 @@ export const ProjectTimeline = () => {
       category: 'web',
       technologies: ['Laravel', 'Vue.js', 'PHP', 'MySQL', 'REST APIs', 'Bootstrap'],
       status: 'completed',
-      highlights: ['3-month on-site internship', 'Laravel backend development', 'Vue.js frontend components', 'RESTful API design & integration'],
+      highlights: ['3-month remote internship', 'Laravel backend development', 'Vue.js frontend components', 'RESTful API design & integration'],
     },
     {
       id: '2',
