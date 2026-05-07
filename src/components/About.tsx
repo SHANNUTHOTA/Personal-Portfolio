@@ -78,6 +78,39 @@ export const About = () => {
                 </CardContent>
               </Card>
 
+              {/* Core Strengths — fills the blank space */}
+              <Card className="modern-card">
+                <CardContent className="p-4 sm:p-6 md:p-8">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="p-2.5 rounded-xl bg-primary/10">
+                      <span className="text-2xl">🎯</span>
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-bold gradient-text">Core Strengths</h3>
+                  </div>
+                  <div className="space-y-4">
+                    {[
+                      { skill: "Full-Stack Development", level: 90 },
+                      { skill: "IoT & Hardware", level: 85 },
+                      { skill: "Problem Solving", level: 95 },
+                      { skill: "Blockchain Development", level: 70 },
+                    ].map((item, index) => (
+                      <div key={index} className="space-y-1.5">
+                        <div className="flex justify-between items-center">
+                          <span className="font-medium text-sm">{item.skill}</span>
+                          <span className="text-xs text-primary font-semibold">{item.level}%</span>
+                        </div>
+                        <div className="h-1.5 bg-muted rounded-full overflow-hidden">
+                          <div
+                            className="h-full bg-gradient-primary transition-all duration-1000 ease-out"
+                            style={{ width: sectionVisible ? `${item.level}%` : '0%', transitionDelay: `${index * 0.1}s` }}
+                          ></div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+
             </div>
 
             {/* RIGHT COLUMN: Experience + Hackathon + Leadership */}
