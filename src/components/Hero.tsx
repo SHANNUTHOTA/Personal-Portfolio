@@ -153,7 +153,7 @@ export const Hero = () => {
       
       {/* Content */}
       <div className="container relative z-10 px-3 sm:px-4 mx-auto">
-        <div className="flex flex-col lg:flex-row items-center justify-between min-h-[calc(100vh-3.5rem)] sm:min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] gap-8 sm:gap-12">
+        <div className="flex flex-col lg:flex-row items-center justify-start lg:justify-between min-h-[calc(100vh-3.5rem)] sm:min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] gap-6 sm:gap-8 lg:gap-12 py-8 lg:py-0">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
 

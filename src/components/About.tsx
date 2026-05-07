@@ -21,8 +21,8 @@ export const About = () => {
             <div className="w-20 sm:w-24 h-1 bg-gradient-primary mx-auto rounded-full mt-4 sm:mt-6"></div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
-            <div className={`space-y-6 sm:space-y-8 transition-all duration-1000 delay-200 ${sectionVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'} flex flex-col h-full`}>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-start">
+            <div className={`space-y-6 transition-all duration-1000 delay-200 ${sectionVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'}`}>
               <Card className="modern-card">
                 <CardContent className="p-4 sm:p-6 md:p-8">
                   <div className="flex items-center gap-3 mb-6">
