@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, Instagram, Sparkles, Code, Zap, Database, Globe, Layers } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Instagram, Sparkles, Code, Zap, Database, Globe, Layers, FileText, Download } from "lucide-react";
 import heroBackground from "@/assets/hero-background.jpg";
 import developerAvatar from "@/assets/icon.jpg"; // Import the new avatar image
 import React from "react";
@@ -199,10 +199,19 @@ export const Hero = () => {
               >
                 Get In Touch
               </Button>
+              <Button
+                variant="outline"
+                size="default"
+                className="text-sm sm:text-base py-2.5 sm:py-3 px-6 sm:px-8 border-amber-500/40 text-amber-400 hover:bg-amber-500/10 hover:border-amber-500/60 transition-all"
+                onClick={() => window.open('/Personal-Portfolio/resume.pdf', '_blank')}
+              >
+                <FileText className="w-4 h-4 mr-2" />
+                View Resume
+              </Button>
             </div>
             
             {/* Social Links */}
-            <div className="flex gap-3 sm:gap-4 justify-center lg:justify-start">
+            <div className="flex gap-3 sm:gap-4 justify-center lg:justify-start items-center">
               <a href="https://github.com/SHANNUTHOTA" className="p-2.5 sm:p-3 rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <Github className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
@@ -214,6 +223,15 @@ export const Hero = () => {
               </a>
               <a href="https://www.instagram.com/mr__shannu_007/" target="_blank" rel="noopener noreferrer" className="p-2.5 sm:p-3 rounded-xl border border-border hover:border-primary/50 transition-colors">
                 <Instagram className="w-4 h-4 sm:w-5 sm:h-5" />
+              </a>
+              {/* Resume Download */}
+              <a
+                href="/Personal-Portfolio/resume.pdf"
+                download="Shanmukha_Sai_Thota_Resume.pdf"
+                className="p-2.5 sm:p-3 rounded-xl border border-amber-500/40 text-amber-400 hover:bg-amber-500/10 hover:border-amber-500/60 transition-all"
+                title="Download Resume"
+              >
+                <Download className="w-4 h-4 sm:w-5 sm:h-5" />
               </a>
             </div>
           </div>
