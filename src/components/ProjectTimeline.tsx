@@ -45,6 +45,16 @@ export const ProjectTimeline = () => {
       liveUrl: 'https://careerinedu.com/tracker/map.html',
     },
     {
+      id: 'intern-1',
+      title: 'Internship — Whinta Technologies',
+      description: 'Worked as a Web Developer Intern at Whinta Technologies, Vijayawada for 3 months. Contributed to production-grade Laravel applications and developed reactive UI components using Vue.js.',
+      date: '2025-10',
+      category: 'web',
+      technologies: ['Laravel', 'Vue.js', 'PHP', 'MySQL', 'REST APIs', 'Bootstrap'],
+      status: 'completed',
+      highlights: ['3-month on-site internship', 'Laravel backend development', 'Vue.js frontend components', 'RESTful API design & integration'],
+    },
+    {
       id: '2',
       title: 'Muskan Medicare E-commerce',
       description: 'Full-featured medical e-commerce platform with secure payment processing and comprehensive product catalog.',

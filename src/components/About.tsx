@@ -23,43 +23,90 @@ export const About = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 items-stretch">
             <div className={`space-y-6 sm:space-y-8 transition-all duration-1000 delay-200 ${sectionVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'} flex flex-col h-full`}>
-              <Card className="modern-card flex-1">
-                <CardContent className="p-4 sm:p-6 md:p-8 h-full flex flex-col">
-                  <div className="flex items-center gap-3 mb-4 sm:mb-6">
-                    <div className="p-2 sm:p-3 rounded-xl bg-gradient-primary/10">
-                      <span className="text-xl sm:text-2xl">📚</span>
+              <Card className="modern-card">
+                <CardContent className="p-4 sm:p-6 md:p-8">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="p-2.5 rounded-xl bg-primary/10">
+                      <span className="text-2xl">🎓</span>
                     </div>
                     <h3 className="text-xl sm:text-2xl font-bold gradient-text">Education</h3>
                   </div>
-                  
-                  <div className="space-y-4 sm:space-y-6 flex-grow overflow-y-auto max-h-[400px] sm:max-h-[600px] pr-2">
-                    <div className="relative pl-5 sm:pl-6 border-l-2 border-primary/30">
-                      <div className="absolute -left-2 top-0 w-4 h-4 bg-gradient-primary rounded-full"></div>
-                      <div>
-                        <h4 className="font-bold text-base sm:text-lg">Bachelor of Technology</h4>
-                        <p className="text-primary font-semibold text-sm sm:text-base">Information Technology</p>
-                        <p className="text-muted-foreground text-xs sm:text-sm">DVR & DR. HS MIC College of Technology, Kanchikacherla</p>
-                        <p className="text-xs sm:text-sm text-muted-foreground">2022 - 2026 | CGPA: 7.66</p>
-                      </div>
-                    </div>
-                    
-                    <div className="relative pl-5 sm:pl-6 border-l-2 border-primary/30">
-                      <div className="absolute -left-2 top-0 w-4 h-4 bg-gradient-primary rounded-full"></div>
-                      <div>
-                        <h4 className="font-bold text-base sm:text-lg">Intermediate (12th)</h4>
-                        <p className="text-primary font-semibold text-sm sm:text-base">Mathematics, Physics, Chemistry</p>
-                        <p className="text-muted-foreground text-xs sm:text-sm">Sri Chaitanya Junior College</p>
-                        <p className="text-xs sm:text-sm text-muted-foreground">2020 - 2022 | Score: 672/1000</p>
-                      </div>
-                    </div>
 
-                    <div className="relative pl-5 sm:pl-6 border-l-2 border-primary/30">
-                      <div className="absolute -left-2 top-0 w-4 h-4 bg-gradient-primary rounded-full"></div>
+                  <div className="space-y-5">
+                    {/* B.Tech */}
+                    <div className="flex gap-4">
+                      <div className="flex flex-col items-center">
+                        <div className="w-3 h-3 rounded-full bg-primary mt-1 flex-shrink-0"></div>
+                        <div className="w-0.5 flex-1 bg-primary/20 mt-1"></div>
+                      </div>
+                      <div className="pb-5">
+                        <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full">2022 – 2026</span>
+                        <h4 className="font-bold text-base mt-1.5">Bachelor of Technology</h4>
+                        <p className="text-sm text-primary font-medium">Information Technology</p>
+                        <p className="text-xs text-muted-foreground mt-0.5">DVR & DR. HS MIC College of Technology, Kanchikacherla</p>
+                        <p className="text-xs font-semibold text-amber-400 mt-1">CGPA: 7.66</p>
+                      </div>
+                    </div>
+                    {/* Intermediate */}
+                    <div className="flex gap-4">
+                      <div className="flex flex-col items-center">
+                        <div className="w-3 h-3 rounded-full bg-primary/60 mt-1 flex-shrink-0"></div>
+                        <div className="w-0.5 flex-1 bg-primary/20 mt-1"></div>
+                      </div>
+                      <div className="pb-5">
+                        <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full">2020 – 2022</span>
+                        <h4 className="font-bold text-base mt-1.5">Intermediate (12th)</h4>
+                        <p className="text-sm text-primary font-medium">MPC — Maths, Physics, Chemistry</p>
+                        <p className="text-xs text-muted-foreground mt-0.5">Sri Chaitanya Junior College</p>
+                        <p className="text-xs font-semibold text-amber-400 mt-1">Score: 672 / 1000</p>
+                      </div>
+                    </div>
+                    {/* SSC */}
+                    <div className="flex gap-4">
+                      <div className="flex flex-col items-center">
+                        <div className="w-3 h-3 rounded-full bg-primary/40 mt-1 flex-shrink-0"></div>
+                      </div>
                       <div>
-                        <h4 className="font-bold text-base sm:text-lg">SSC</h4>
-                        <p className="text-primary font-semibold text-sm sm:text-base">10th Grade</p>
-                        <p className="text-muted-foreground text-xs sm:text-sm">Sri Chaitanya Techno School</p>
-                        <p className="text-xs sm:text-sm text-muted-foreground">2020 | Percentage: 99.8%</p>
+                        <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full">2020</span>
+                        <h4 className="font-bold text-base mt-1.5">SSC (10th Grade)</h4>
+                        <p className="text-sm text-primary font-medium">General</p>
+                        <p className="text-xs text-muted-foreground mt-0.5">Sri Chaitanya Techno School</p>
+                        <p className="text-xs font-semibold text-amber-400 mt-1">Percentage: 99.8%</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Experience Card */}
+              <Card className="modern-card">
+                <CardContent className="p-4 sm:p-6 md:p-8">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="p-2.5 rounded-xl bg-primary/10">
+                      <span className="text-2xl">💼</span>
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-bold gradient-text">Experience</h3>
+                  </div>
+
+                  <div className="flex gap-4">
+                    <div className="flex flex-col items-center">
+                      <div className="w-3 h-3 rounded-full bg-primary mt-1 flex-shrink-0"></div>
+                    </div>
+                    <div>
+                      <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full">Oct 2025 – Dec 2025</span>
+                      <h4 className="font-bold text-base mt-1.5">Web Developer Intern</h4>
+                      <p className="text-sm text-primary font-medium">Whinta Technologies · Vijayawada</p>
+                      <p className="text-xs text-muted-foreground mt-0.5">3 Months · On-site</p>
+                      <ul className="mt-3 space-y-1.5 text-xs text-muted-foreground">
+                        <li className="flex items-start gap-2"><span className="text-primary mt-0.5">▸</span>Built and maintained web apps using Laravel framework</li>
+                        <li className="flex items-start gap-2"><span className="text-primary mt-0.5">▸</span>Developed dynamic, reactive UI components with Vue.js</li>
+                        <li className="flex items-start gap-2"><span className="text-primary mt-0.5">▸</span>Designed and integrated RESTful APIs with MySQL backend</li>
+                        <li className="flex items-start gap-2"><span className="text-primary mt-0.5">▸</span>Collaborated in agile team environment on production code</li>
+                      </ul>
+                      <div className="flex flex-wrap gap-1.5 mt-3">
+                        {["Laravel", "Vue.js", "MySQL", "REST APIs", "PHP", "Bootstrap"].map(t => (
+                          <span key={t} className="text-xs px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">{t}</span>
+                        ))}
                       </div>
                     </div>
                   </div>
