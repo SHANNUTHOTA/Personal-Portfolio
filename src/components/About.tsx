@@ -95,7 +95,7 @@ export const About = () => {
                     <div>
                       <span className="text-xs font-semibold text-primary bg-primary/10 px-2 py-0.5 rounded-full">Oct 2025 – Dec 2025</span>
                       <h4 className="font-bold text-base mt-1.5">Web Developer Intern</h4>
-                      <p className="text-sm text-primary font-medium">Whinta Technologies · Vijayawada</p>
+                      <p className="text-sm text-primary font-medium">Whinta · Delhi (WhatsApp Business API)</p>
                       <p className="text-xs text-muted-foreground mt-0.5">3 Months · Remote</p>
                       <ul className="mt-3 space-y-1.5 text-xs text-muted-foreground">
                         <li className="flex items-start gap-2"><span className="text-primary mt-0.5">▸</span>Built and maintained web apps using Laravel framework</li>

@@ -46,8 +46,8 @@ export const ProjectTimeline = () => {
     },
     {
       id: 'intern-1',
-      title: 'Internship — Whinta Technologies',
-      description: 'Worked as a Web Developer Intern at Whinta Technologies, Vijayawada for 3 months. Contributed to production-grade Laravel applications and developed reactive UI components using Vue.js.',
+      title: 'Internship — Whinta (Delhi)',
+      description: 'Worked as a Web Developer Intern at Whinta, a Delhi-based WhatsApp Business API company, for 3 months remotely. Contributed to Laravel backend and developed reactive Vue.js UI components.',
       date: '2025-10',
       category: 'web',
       technologies: ['Laravel', 'Vue.js', 'PHP', 'MySQL', 'REST APIs', 'Bootstrap'],
