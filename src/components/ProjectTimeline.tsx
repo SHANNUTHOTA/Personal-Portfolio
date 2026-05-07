@@ -24,6 +24,16 @@ export const ProjectTimeline = () => {
 
   const projects: TimelineProject[] = [
     {
+      id: '0',
+      title: 'IntelliHire – AI Recruitment Platform',
+      description: 'AI-powered recruitment platform with mock interview system using facial expression detection (face.js) and Web Speech API (speech-to-text), hybrid job aggregation engine, and role-based Student & Admin dashboards.',
+      date: '2026-05',
+      category: 'ai',
+      technologies: ['PHP', 'MySQL', 'JavaScript', 'Bootstrap', 'Web Speech API', 'face.js', 'Bland.ai', 'Actice API'],
+      status: 'completed',
+      highlights: ['Final Year Project 2026', 'AI mock interview with facial recognition', 'Hybrid job aggregation engine', 'Role-based Student & Admin dashboard'],
+    },
+    {
       id: '1',
       title: 'IoT Cattle Tracking System',
       description: 'Real-time GPS tracking system with LoRa communication for livestock monitoring developed for KBN CodeSpark Hackathon 2025.',

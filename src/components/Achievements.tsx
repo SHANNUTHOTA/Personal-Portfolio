@@ -9,30 +9,10 @@ export const Achievements = () => {
   const { ref: hobbiesRef, isVisible: hobbiesVisible } = useScrollAnimation<HTMLDivElement>(0.3);
 
   const strengths = [
-    {
-      icon: Target,
-      title: "Self-Motivated",
-      description: "Driven by passion and curiosity to continuously learn and improve",
-      color: "from-purple-500 to-pink-500"
-    },
-    {
-      icon: Lightbulb,
-      title: "Adaptive & Optimistic",
-      description: "Quick to adapt to new technologies and maintain positive outlook",
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      icon: Users,
-      title: "Leadership Qualities",
-      description: "Natural initiator with proven experience leading teams and organizing events",
-      color: "from-green-500 to-emerald-500"
-    },
-    {
-      icon: Clock,
-      title: "Time Management",
-      description: "Excellent at managing multiple projects and meeting deadlines",
-      color: "from-orange-500 to-red-500"
-    }
+    { icon: Target, title: "Self-Motivated", description: "Driven by passion and curiosity to continuously learn and improve", color: "from-amber-400 to-amber-500" },
+    { icon: Lightbulb, title: "Adaptive & Optimistic", description: "Quick to adapt to new technologies and maintain positive outlook", color: "from-amber-500 to-orange-400" },
+    { icon: Users, title: "Leadership Qualities", description: "Natural initiator with proven experience leading teams and organizing events", color: "from-orange-400 to-amber-400" },
+    { icon: Clock, title: "Time Management", description: "Excellent at managing multiple projects and meeting deadlines", color: "from-yellow-400 to-amber-500" }
   ];
 
   const hobbies = [
@@ -91,8 +71,8 @@ export const Achievements = () => {
                 >
                   <CardContent className="p-6 relative z-10 text-center">
                     <div className="flex justify-center mb-4">
-                      <div className={`p-4 bg-gradient-to-r ${strength.color} bg-opacity-10 rounded-xl group-hover:scale-110 transition-transform duration-300`}>
-                        <strength.icon className="w-8 h-8 text-primary group-hover:animate-bounce-gentle" />
+                      <div className={`p-4 bg-gradient-to-r ${strength.color} rounded-xl group-hover:scale-110 transition-transform duration-300`}>
+                        <strength.icon className="w-8 h-8 text-white group-hover:animate-bounce-gentle" />
                       </div>
                     </div>
                     <h4 className="text-xl font-bold mb-3 gradient-text group-hover:scale-105 transition-transform duration-300">
@@ -120,8 +100,8 @@ export const Achievements = () => {
                 >
                   <CardContent className="p-8 relative z-10">
                     <div className="flex items-start gap-6">
-                      <div className="p-3 bg-gradient-primary bg-opacity-10 rounded-xl group-hover:scale-110 transition-transform duration-300 shrink-0">
-                        <hobby.icon className="w-6 h-6 text-primary group-hover:animate-bounce-gentle" />
+                      <div className="p-3 bg-gradient-primary rounded-xl group-hover:scale-110 transition-transform duration-300 shrink-0">
+                        <hobby.icon className="w-6 h-6 text-white group-hover:animate-bounce-gentle" />
                       </div>
                       <div>
                         <h4 className="text-xl font-bold mb-3 gradient-text group-hover:scale-105 transition-transform duration-300">

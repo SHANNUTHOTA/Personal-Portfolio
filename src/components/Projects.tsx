@@ -11,6 +11,23 @@ export const Projects = () => {
 
   const projects = [
     {
+      title: "IntelliHire",
+      subtitle: "AI-Powered Recruitment Platform",
+      description: "Smart recruitment platform with AI mock interview system using Face.js for facial expression detection and Web Speech API for speech-to-text. Features hybrid job aggregation engine with Actice API and deep-search links for LinkedIn, Indeed & Naukri.",
+      challenges: ["Facial expression detection accuracy", "Real-time speech processing", "Job aggregation across platforms"],
+      solutions: ["face.js facial recognition API", "Web Speech API integration", "Actice API + deep-search hybrid engine"],
+      results: ["AI-powered mock interviews", "Multi-platform job aggregation", "Role-based Student & Admin dashboard"],
+      technologies: ["PHP", "MySQL", "JavaScript", "Bootstrap", "Web Speech API", "face.js", "Bland.ai"],
+      github: "#",
+      demo: "#",
+      status: "Completed",
+      category: "AI",
+      year: "2026",
+      duration: "Final Year Project",
+      teamSize: "4 developers",
+      color: "from-amber-400 to-amber-500"
+    },
+    {
       title: "Cattle Tracking System",
       subtitle: "IoT Livestock Monitoring Solution",
       description: "End-to-end IoT livestock monitoring system with real-time GPS tracking and geofencing capabilities for rural livestock management.",
@@ -25,7 +42,7 @@ export const Projects = () => {
       year: "2025",
       duration: "24 Hrs",
       teamSize: "3 developers",
-      color: "from-purple-500 to-pink-500"
+      color: "from-amber-500 to-orange-500"
     },
     {
       title: "Muskan Medicare",
@@ -42,7 +59,7 @@ export const Projects = () => {
       year: "2024",
       duration: "2 months",
       teamSize: "5 Developers",
-      color: "from-green-500 to-emerald-500"
+      color: "from-orange-400 to-amber-400"
     },
     {
       title: "DrWinz Pharma",
@@ -59,7 +76,7 @@ export const Projects = () => {
       year: "2024",
       duration: "1 months",
       teamSize: "5 Developers",
-      color: "from-green-500 to-emerald-500"
+      color: "from-amber-400 to-yellow-400"
     },
     {
       title: "RiyoCar",
@@ -76,7 +93,7 @@ export const Projects = () => {
       year: "2024",
       duration: "1 months",
       teamSize: "5 Developers",
-      color: "from-pink-500 to-rose-500"
+      color: "from-yellow-400 to-amber-500"
     },
     {
       title: "CareerInEdu",
@@ -93,7 +110,7 @@ export const Projects = () => {
       year: "2023",
       duration: "5 months",
       teamSize: "5 developers",  
-      color: "from-orange-500 to-red-500"
+      color: "from-amber-500 to-orange-400"
     }
   ];
 

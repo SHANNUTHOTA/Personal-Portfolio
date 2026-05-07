@@ -39,7 +39,7 @@ export const About = () => {
                         <h4 className="font-bold text-base sm:text-lg">Bachelor of Technology</h4>
                         <p className="text-primary font-semibold text-sm sm:text-base">Information Technology</p>
                         <p className="text-muted-foreground text-xs sm:text-sm">DVR & DR. HS MIC College of Technology, Kanchikacherla</p>
-                        <p className="text-xs sm:text-sm text-muted-foreground">2022 - 2026 | CGPA: 7.28</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground">2022 - 2026 | CGPA: 7.66</p>
                       </div>
                     </div>
                     

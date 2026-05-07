@@ -156,6 +156,18 @@ export const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between min-h-[calc(100vh-3.5rem)] sm:min-h-[calc(100vh-4rem)] md:min-h-[calc(100vh-5rem)] gap-8 sm:gap-12">
           {/* Left Content */}
           <div className="w-full lg:w-1/2 text-center lg:text-left">
+
+            {/* Open to Work Badge */}
+            <div className="flex justify-center lg:justify-start mb-4">
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/40 bg-amber-500/10 text-amber-400 text-sm font-medium">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+                </span>
+                Open to Work — Actively Looking for Opportunities
+              </span>
+            </div>
+
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-3 sm:mb-4 gradient-text leading-tight">
               Shanmukha Sai Thota
             </h1>

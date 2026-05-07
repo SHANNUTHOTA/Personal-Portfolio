@@ -42,60 +42,16 @@ ${formData.message}`;
   };
   
   const contactMethods = [
-    {
-      icon: MessageCircle,
-      label: "WhatsApp",
-      value: "+91 9492869571",
-      href: "https://wa.me/919492869571",
-      color: "from-green-500 to-emerald-500",
-      description: "Preferred contact method"
-    },
-    {
-      icon: Mail,
-      label: "Email",
-      value: "shannuthota2005@gmail.com",
-      href: "mailto:shannuthota2005@gmail.com",
-      color: "from-blue-500 to-cyan-500",
-      description: "Quick email response"
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+91 9492869571",
-      href: "tel:+919492869571",
-      color: "from-indigo-500 to-purple-500",
-      description: "Direct call anytime"
-    },
-    {
-     icon: MapPin,
-label: "Location",
-value: "Vijayawada, India",
-href: "https://www.google.com/maps/place/Vijayawada,+Andhra+Pradesh,+India",
-color: "from-purple-500 to-pink-500",
-description: "Available for remote work"
-
-    }
+    { icon: MessageCircle, label: "WhatsApp", value: "+91 9492869571", href: "https://wa.me/919492869571", color: "from-amber-400 to-amber-500", description: "Preferred contact method" },
+    { icon: Mail, label: "Email", value: "shannuthota2005@gmail.com", href: "mailto:shannuthota2005@gmail.com", color: "from-amber-500 to-orange-400", description: "Quick email response" },
+    { icon: Phone, label: "Phone", value: "+91 9492869571", href: "tel:+919492869571", color: "from-orange-400 to-amber-400", description: "Direct call anytime" },
+    { icon: MapPin, label: "Location", value: "Vijayawada, India", href: "https://www.google.com/maps/place/Vijayawada,+Andhra+Pradesh,+India", color: "from-yellow-400 to-amber-500", description: "Available for remote work" }
   ];
 
   const socialLinks = [
-    {
-      name: "LinkedIn",
-      icon: Linkedin,
-      href: "https://www.linkedin.com/in/shanmukha-sai-54127a28b/",
-      color: "from-blue-600 to-blue-500"
-    },
-    {
-      name: "GitHub",
-      icon: Github,
-      href: "https://github.com/shannuthota",
-      color: "from-gray-800 to-gray-600"
-    },
-    {
-      name: "Portfolio",
-      icon: Globe,
-      href: "#",
-      color: "from-purple-600 to-pink-500"
-    }
+    { name: "LinkedIn", icon: Linkedin, href: "https://www.linkedin.com/in/shanmukha-sai-54127a28b/", color: "from-amber-400 to-amber-500" },
+    { name: "GitHub", icon: Github, href: "https://github.com/shannuthota", color: "from-amber-500 to-orange-400" },
+    { name: "Portfolio", icon: Globe, href: "#", color: "from-orange-400 to-amber-400" }
   ];
 
   return (
@@ -183,10 +139,7 @@ description: "Available for remote work"
                         />
                       </div>
                       
-                      <Button 
-                        type="submit"
-                        className="w-full bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-semibold h-12 transition-all duration-300"
-                      >
+                      <Button type="submit" className="w-full bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-semibold h-12 transition-all duration-300">
                         <MessageCircle className="w-4 h-4 mr-2" />
                         Send via WhatsApp
                       </Button>
@@ -214,8 +167,8 @@ description: "Available for remote work"
                     >
                       <CardContent className="p-4">
                         <div className="flex items-center gap-4">
-                          <div className={`p-3 rounded-lg bg-gradient-to-r ${method.color} bg-opacity-10`}>
-                            <method.icon className="w-5 h-5 text-primary" />
+                          <div className={`p-3 rounded-lg bg-gradient-to-r ${method.color}`}>
+                            <method.icon className="w-5 h-5 text-white" />
                           </div>
                           <div className="flex-1">
                             <div className="font-semibold text-sm">{method.label}</div>
@@ -271,7 +224,10 @@ description: "Available for remote work"
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Availability:</span>
-                      <span className="font-medium">Open for new projects</span>
+                      <span className="font-medium text-amber-400 flex items-center gap-1.5">
+                        <span className="relative flex h-2 w-2"><span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span><span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span></span>
+                        Actively Looking for Jobs
+                      </span>
                     </div>
                     <div className="flex justify-between">
                       <span className="text-muted-foreground">Time Zone:</span>
