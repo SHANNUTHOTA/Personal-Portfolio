@@ -32,6 +32,7 @@ export const ProjectTimeline = () => {
       technologies: ['PHP', 'MySQL', 'JavaScript', 'Bootstrap', 'Web Speech API', 'face.js', 'Bland.ai', 'Actice API'],
       status: 'completed',
       highlights: ['Final Year Project 2026', 'AI mock interview with facial recognition', 'Hybrid job aggregation engine', 'Role-based Student & Admin dashboard'],
+      liveUrl: 'https://intellihire.42web.io',
     },
     {
       id: '1',
