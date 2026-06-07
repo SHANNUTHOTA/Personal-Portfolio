@@ -24,6 +24,18 @@ export const ProjectTimeline = () => {
 
   const projects: TimelineProject[] = [
     {
+      id: 'freelance-1',
+      title: 'Tree House Academy of Tolland',
+      description: 'Designed and developed a premium, SEO-optimized web platform for a licensed childcare center. Implemented interactive parent-enrollment paths, optimized local SEO, and integrated custom PHP inquiry systems.',
+      date: '2026-06',
+      category: 'web',
+      technologies: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'PHP', 'MySQL', 'SEO'],
+      status: 'completed',
+      highlights: ['Delivered end-to-end as a freelance developer', 'First-page local search engine visibility', 'Interactive curriculum & resource pages', 'Secure contact and inquiry database integration'],
+      liveUrl: 'https://www.treehouseacademyoftolland.com',
+      githubUrl: 'https://github.com/SHANNUTHOTA',
+    },
+    {
       id: '0',
       title: 'IntelliHire – AI Recruitment Platform',
       description: 'AI-powered recruitment platform with mock interview system using facial expression detection (face.js) and Web Speech API (speech-to-text), hybrid job aggregation engine, and role-based Student & Admin dashboards.',

@@ -11,6 +11,23 @@ export const Projects = () => {
 
   const projects = [
     {
+      title: "Tree House Academy",
+      subtitle: "Daycare & Child Care Web Platform",
+      description: "A secure, modern, and SEO-optimized website for a licensed childcare academy in Tolland, CT. Features custom parent resources, interactive curriculum pages, and secure enrollment inquiry systems.",
+      challenges: ["Optimizing local SEO performance", "Responsive web accessibility (a11y) for parents", "Creating engaging animations for parents and children"],
+      solutions: ["Structured Schema.org JSON-LD data implementation", "Accessible Bootstrap design with optimized tap targets", "Integrated AOS (Animate On Scroll) and custom CSS micro-interactions"],
+      results: ["First-page ranking for local daycare search terms", "Improved parent engagement with responsive resource pages", "Fully secure PHP inquiry submission system"],
+      technologies: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "PHP", "MySQL", "SEO"],
+      github: "https://github.com/SHANNUTHOTA",
+      demo: "https://www.treehouseacademyoftolland.com",
+      status: "Live",
+      category: "Education",
+      year: "2026",
+      duration: "2 months",
+      teamSize: "1 Developer",
+      color: "from-emerald-400 to-green-500"
+    },
+    {
       title: "IntelliHire",
       subtitle: "AI-Powered Recruitment Platform",
       description: "Smart recruitment platform with AI mock interview system using Face.js for facial expression detection and Web Speech API for speech-to-text. Features hybrid job aggregation engine with Actice API and deep-search links for LinkedIn, Indeed & Naukri.",
