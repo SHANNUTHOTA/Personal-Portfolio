@@ -203,7 +203,7 @@ export const Hero = () => {
                 variant="outline"
                 size="default"
                 className="text-sm sm:text-base py-2.5 sm:py-3 px-6 sm:px-8 border-amber-500/40 text-amber-400 hover:bg-amber-500/10 hover:border-amber-500/60 transition-all"
-                onClick={() => window.open('/Personal-Portfolio/resume.pdf', '_blank')}
+                onClick={() => window.open('/Personal-Portfolio/ShanmukhaSai-Resume.pdf', '_blank')}
               >
                 <FileText className="w-4 h-4 mr-2" />
                 View Resume
@@ -226,8 +226,8 @@ export const Hero = () => {
               </a>
               {/* Resume Download */}
               <a
-                href="/Personal-Portfolio/resume.pdf"
-                download="Shanmukha_Sai_Thota_Resume.pdf"
+                href="/Personal-Portfolio/ShanmukhaSai-Resume.pdf"
+                download="ShanmukhaSai-Resume.pdf"
                 className="p-2.5 sm:p-3 rounded-xl border border-amber-500/40 text-amber-400 hover:bg-amber-500/10 hover:border-amber-500/60 transition-all"
                 title="Download Resume"
               >
