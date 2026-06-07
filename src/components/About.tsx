@@ -216,7 +216,7 @@ export const About = () => {
           <div ref={statsRef} className={`mt-12 sm:mt-16 lg:mt-20 transition-all duration-1000 ${statsVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
               {[
-                { number: "5+", label: "Projects Completed" },
+                { number: "7", label: "Projects Completed" },
                 { number: "5+", label: "Hackathons Participated" },
                 { number: "8+", label: "Technologies Explored" },
                 { number: "3+", label: "Years Experience" }

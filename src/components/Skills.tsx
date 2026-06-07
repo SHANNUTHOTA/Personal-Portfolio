@@ -178,7 +178,7 @@ export const Skills = () => {
               },
               {
                 title: "Projects Completed",
-                value: "5+",
+                value: "7",
                 description: "Across multiple technologies",
                 icon: "🚀"
               },
